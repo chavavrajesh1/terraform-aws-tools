@@ -6,7 +6,7 @@ module "jenkins" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = ["sg-0c76aed609a9d7308"]
   subnet_id              = "subnet-0d0d98dc2ce27610f"
-  ami                    = data.aws_ami.ami_info
+  ami                    = data.aws_ami.ami_info.id
   user_data              = file("jenkins.sh")
   tags = {
     Name = "jenkins-tf"
