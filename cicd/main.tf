@@ -52,7 +52,7 @@ module "records" {
       type = "A"
       ttl  = 1
       records = [
-        module.jenkins_agent.private_ip
+        module.jenkins-agent.private_ip
       ]
       allow_overwrite = true
     },
