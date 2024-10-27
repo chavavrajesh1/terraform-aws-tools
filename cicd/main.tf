@@ -43,7 +43,7 @@ module "nexus" {
 
   name = "nexus"
 
-  instance_type          = "t2.micro"
+  instance_type          = "t3.medium"
   vpc_security_group_ids = ["sg-0c76aed609a9d7308"]
   subnet_id              = "subnet-0d0d98dc2ce27610f"
   ami                    = data.aws_ami.ami_info.id
